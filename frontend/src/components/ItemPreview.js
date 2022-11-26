@@ -20,10 +20,10 @@ const mapDispatchToProps = (dispatch) => ({
 const ItemPreview = (props) => {
   const item = props.item;
 
-  if(item.image === null || item.image === ''){
-    item.image = "placeholder.png"
+  if (item.image === null || item.image === "") {
+    item.image = "placeholder.png";
   }
-  
+
   const handleClick = (ev) => {
     ev.preventDefault();
     if (item.favorited) {
